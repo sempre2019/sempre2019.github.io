@@ -15,3 +15,22 @@ ol, ul {
 }
 
 /**=========================================**/
+
+/**FONT**/
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+
+h2 {
+    font-family: 'Manjari', sans-serif;
+}
+
