@@ -34,3 +34,124 @@ h2 {
     font-family: 'Manjari', sans-serif;
 }
 
+/**=========================================**/
+
+/*MAIN HEADER*/
+
+.main-header {
+    position: relative;
+    background: rgb(58, 117, 56) url(../img/office-p.jpg);
+    height: 19rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 3.5rem;
+    padding: 0 1rem;
+    background: rgb(35, 80, 33);
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.main-header-brand {
+    color: #FFF;
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-header-brand span {
+    color: rgb(147, 202, 145);
+}
+
+.main-header-menu {
+    display: flex;
+    margin-top: 0.3rem;
+}
+
+.main-header-menu li {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.main-header-menu a {
+    color: #fff;
+    font-size: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-header-headline {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    width: 16rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0px 0.25rem 1.25rem rgba(0, 0, 0, 0.5);
+}
+
+/**=========================================**/
+
+/**MEDIA QUERIES**/
+
+@media (min-width: 540px) {
+    .main-header {
+        background: rgb(58, 117, 56) url(../img/office-m.jpg);
+    }
+
+    :root{
+        font-size: 20px;
+    }
+
+    .main-header-navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 2.5rem;
+    }
+
+    .main-header-menu {
+        margin-top: 0rem;
+    }
+
+    .main-header-headline {
+        font-size: 2.0rem;
+    }
+}
+
+@media (min-width: 720px) {
+    :root {
+        font-size: 22px;
+    }
+
+    .main-header-headline {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-header {
+        background: rgb(58, 117, 56) url(../img/office-g.jpg);
+    }
+
+    :root {
+        font-size: 28px;
+    }
+}
+
+@media(min-width: 1368px) {
+    :root {
+        font-size: 36px;
+    }
+}
+
+@media(min-width: 1700) {
+    
+}
