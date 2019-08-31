@@ -152,6 +152,7 @@ h2 {
 .schedule {
     text-align: left;
     margin-top: 2rem;
+    
 }
 
 .schedule-day {
@@ -215,7 +216,7 @@ h2 {
 }
 
 .speaker-img {
-    border-radius: 0.25rem;
+    border-radius: 0.75rem;
     width: 10rem;
     height: 10rem;
 }
