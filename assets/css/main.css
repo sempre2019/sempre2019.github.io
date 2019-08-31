@@ -100,6 +100,102 @@ h2 {
 
 /**=========================================**/
 
+/**SECTIONS**/
+
+.section {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section-description {
+    font-size: 0.75rem;
+    color: rgb(71, 71, 71);
+    padding: 0.5rem 3rem;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.section-schedule {
+    background-color: #FFF
+}
+
+.section-schedule .section-heading {
+    font-family: 'Manjari', sans-serif;
+    color: rgb(35, 80, 33);
+}
+
+/**=========================================**/
+
+/*SCHEDULE*/
+
+.schedule {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.schedule-day {
+    font-size: 1rem;
+    color: rgb(35, 80, 33);
+    font-weight: normal;
+    border-bottom: 0.0rem rgb(35, 80, 33) solid;
+    padding-bottom: 0.1rem;
+    margin-top: 2rem;
+}
+
+.event {
+    display: felx;
+    flex-direction: column;
+    margin-top: 0.75rem;
+    font-size: 0.55rem;
+    color: rgb(0, 0, 0);
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    border-bottom: 0.05rem rgb(0, 0, 0) solid;
+}
+
+.event-time {
+    font-weight: normal;
+    color: black;
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.event-text {
+    font-size: 0.7rem;
+}
+
+.event-text a {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.event-text p {
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.event-speakers img {
+    height: 2.5rem;
+    border-radius: 100rem;
+    border: 0.1rem solid rgb(35, 80, 33);
+}
+
+.event-speakers img:not(:first-of-type) {
+    margin-left: -1.2rem;
+}
+/**=========================================**/
+
 /**MEDIA QUERIES**/
 
 @media (min-width: 540px) {
