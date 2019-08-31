@@ -1,0 +1,353 @@
+/**RESET**/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/**=========================================**/
+
+/**FONT**/
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+
+h2 {
+    font-family: 'Manjari', sans-serif;
+}
+
+/**=========================================**/
+
+/*MAIN HEADER*/
+
+.main-header {
+    position: relative;
+    background: rgb(58, 117, 56) url(../img/office-p.jpg);
+    height: 19rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 3.5rem;
+    padding: 0 1rem;
+    background: rgb(35, 80, 33);
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.main-header-brand {
+    color: #FFF;
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-header-brand span {
+    color: rgb(147, 202, 145);
+}
+
+.main-header-menu {
+    display: flex;
+    margin-top: 0.3rem;
+}
+
+.main-header-menu li {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.main-header-menu a {
+    color: #fff;
+    font-size: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-header-headline {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    width: 16rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0px 0.25rem 1.25rem rgba(0, 0, 0, 0.5);
+}
+
+/**=========================================**/
+
+/**SECTIONS**/
+
+.section {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section-description {
+    font-size: 0.75rem;
+    color: #A7A7A7;
+    padding: 0.5rem 3rem;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.section-schedule {
+    background-color: #FFF
+}
+
+.section-schedule .section-heading {
+    font-family: 'Manjari', sans-serif;
+    color: rgb(35, 80, 33);
+}
+
+.section-speakers{
+ background-color: rgb(35, 80, 33)
+}
+
+.section-speakers .section-heading {
+    font-family: 'Manjari', sans-serif;
+    color: rgb(147, 202, 145);
+}
+
+/**=========================================**/
+
+/*SCHEDULE*/
+
+.schedule {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.schedule-day {
+    font-size: 1rem;
+    color: rgb(35, 80, 33);
+    font-weight: normal;
+    border-bottom: 0.05rem rgb(35, 80, 33) solid;
+    padding-bottom: 0.1rem;
+    margin-top: 2rem;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+    font-size: 0.55rem;
+    color: rgb(0, 0, 0);
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    border-bottom: 0.05rem rgb(147, 202, 145) solid;
+}
+
+.event-time {
+    font-weight: normal;
+    color: black;
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.event-text {
+    font-size: 0.7rem;
+}
+
+.event-text a {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.event-text p {
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.event-speakers img {
+    height: 2.5rem;
+    border-radius: 100rem;
+    border: 0.1rem solid rgb(35, 80, 33);
+}
+
+.event-speakers img:not(:first-of-type) {
+    margin-left: -1.0rem;
+}
+/**=========================================**/
+
+/*SPEAKERS*/
+
+.speaker {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.speaker-img {
+    border-radius: 0.75rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.speaker-title {
+    font-size: 1rem;
+    color: rgb(147, 202, 145);
+}
+
+.speaker-description {
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+}
+
+.speaker-contact {
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/**=========================================**/
+
+/**MEDIA QUERIES**/
+
+@media (min-width: 540px) {
+    .main-header {
+        background: rgb(58, 117, 56) url(../img/office-m.jpg);
+    }
+
+    :root{
+        font-size: 20px;
+    }
+
+    .main-header-navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 2.5rem;
+    }
+
+    .main-header-menu {
+        margin-top: 0rem;
+    }
+
+    .main-header-headline {
+        font-size: 2.0rem;
+    }
+}
+
+@media (min-width: 720px) {
+    :root {
+        font-size: 22px;
+    }
+
+    .main-header-headline {
+        font-size: 2.5rem;
+    }
+
+    .section-content {
+        flex-direction: row;
+    }
+
+    .section-schedule .section-content {
+        flex-direction: column;
+    }
+
+    .event {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .event-time {
+        flex-basis: 20%;
+    }
+
+    .event-text {
+        flex-basis: 60%;
+    }
+
+    .event-speakers {
+        flex-basis: 20%;
+        text-align: right;
+    }
+
+    .speaker {
+        flex-direction: column;
+        margin: 0 0.5rem;
+        flex-basis: calc(50%-2rem);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .speaker-text {
+        padding-left: 0.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-header {
+        background: rgb(58, 117, 56) url(../img/office-g.jpg);
+    }
+
+    :root {
+        font-size: 28px;
+    }
+
+    .main-header-navbar {
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        width: 95%;
+    }
+
+    .section {
+        padding: 3rem 6rem;
+    }
+}
+
+@media(min-width: 1368px) {
+    :root {
+        font-size: 36px;
+    }
+
+    .section {
+        padding: 3rem 6rem;
+    }
+
+    .speaker {
+        margin: 1rem 0.5rem;
+        flex-basis: 30%;
+    }
+}
+
+@media(min-width: 1700) {
+    
+}

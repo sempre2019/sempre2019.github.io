@@ -1,0 +1,19 @@
+[
+    {
+        "nome" : "Palestrante A",
+        "titulo" : "Professor IFSP",
+        "foto" : "assets/img/speaker-default"
+    },
+
+    {
+        "nome" : "Palestrante B",
+        "titulo" : "CEO IFSP",
+        "foto" : "assets/img/speaker-default"
+    },
+
+    {
+        "nome" : "Palestrante C",
+        "titulo" : "Aluno IFSP",
+        "foto" : "assets/img/speaker-default"
+    }
+]
