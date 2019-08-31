@@ -115,7 +115,7 @@ h2 {
 
 .section-description {
     font-size: 0.75rem;
-    color: rgb(71, 71, 71);
+    color: #A7A7A7;
     padding: 0.5rem 3rem;
 }
 
@@ -134,6 +134,15 @@ h2 {
 .section-schedule .section-heading {
     font-family: 'Manjari', sans-serif;
     color: rgb(35, 80, 33);
+}
+
+.section-speakers{
+ background-color: rgb(35, 80, 33)
+}
+
+.section-speakers .section-heading {
+    font-family: 'Manjari', sans-serif;
+    color: rgb(147, 202, 145);
 }
 
 /**=========================================**/
@@ -196,6 +205,39 @@ h2 {
 }
 /**=========================================**/
 
+/*SPEAKERS*/
+
+.speaker {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.speaker-img {
+    border-radius: 0.25rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.speaker-title {
+    font-size: 1rem;
+    color: rgb(147, 202, 145);
+}
+
+.speaker-description {
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+}
+
+.speaker-contact {
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/**=========================================**/
+
 /**MEDIA QUERIES**/
 
 @media (min-width: 540px) {
@@ -256,6 +298,18 @@ h2 {
         flex-basis: 20%;
         text-align: right;
     }
+
+    .speaker {
+        flex-direction: column;
+        margin: 0 0.5rem;
+        flex-basis: calc(50%-2rem);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .speaker-text {
+        padding-left: 0.5rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -286,6 +340,11 @@ h2 {
 
     .section {
         padding: 3rem 6rem;
+    }
+
+    .speaker {
+        margin: 1rem 0.5rem;
+        flex-basis: 30%;
     }
 }
 
