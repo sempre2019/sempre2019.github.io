@@ -1,0 +1,100 @@
+[
+    {
+        "dia_da_semana": "Terça-feira (10/09/2019)",
+        "data": "10/09/2019",
+        "eventos": [
+            {
+               "hora_de_inicio": "08:00",
+               "hora_de_termino": "18:00",
+               "local": "IFSP - Sala X",
+               "nome" : "Palestra 1",
+               "palestrantes": [
+                   {
+                       "nome": "Palestrante A"
+                   }
+               ]
+            },
+
+            {
+                "hora_de_inicio": "08:00",
+                "hora_de_termino": "18:00",
+                "local": "IFSP - Sala X",
+                "nome" : "Palestra 2",
+                "palestrantes": [
+                    {
+                        "nome": "Palestrante A"
+                    },
+                    {
+                        "nome": "Palestrante B"
+                    }
+                ]
+             },
+
+             {
+                "hora_de_inicio": "08:00",
+                "hora_de_termino": "18:00",
+                "local": "IFSP - Sala X",
+                "nome" : "Palestra 3",
+                "palestrantes": [
+                    {
+                        "nome": "Palestrante A"
+                    },
+                    {
+                        "nome": "Palestrante B"
+                    },
+                    {
+                        "nome": "Palestrante C"
+                    }
+                ]
+             }
+        ]
+    },
+
+    {
+        "dia_da_semana": "Quarta-feira (11/09/2019)",
+        "data": "11/09/2019",
+        "eventos": [
+            {
+               "hora_de_inicio": "08:00",
+               "hora_de_termino": "18:00",
+               "local": "IFSP - Sala X",
+               "nome" : "Palestra 4",
+               "palestrantes": [
+                   {
+                       "nome": "Palestrante C"
+                   }
+               ]
+            },
+
+            {
+                "hora_de_inicio": "08:00",
+                "hora_de_termino": "18:00",
+                "local": "IFSP - Sala X",
+                "nome" : "Palestra 5",
+                "palestrantes": [
+                    {
+                        "nome": "Palestrante A"
+                    },
+                    {
+                        "nome": "Palestrante B"
+                    },
+                    {
+                        "nome": "Palestrante C"
+                    }
+                ]
+             },
+
+             {
+                "hora_de_inicio": "08:00",
+                "hora_de_termino": "18:00",
+                "local": "IFSP - Sala X",
+                "nome" : "Palestra 6",
+                "palestrantes": [
+                    {
+                        "nome": "Palestrante C"
+                    }
+                ]
+             }
+        ]
+    }
+]

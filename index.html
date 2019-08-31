@@ -1,0 +1,69 @@
+---
+layout: main
+titulo: Semana do Empreendedorismo
+---
+
+<header id="home" class="main-header">
+    <nav class="main-header-navbar">
+        <a href="#home" class="main-header-brand">SEMPRE<span> 2019</span></a>
+        <ul class="main-header-menu">
+            <li><a href="#section-schedule">Programação</a></li>
+            <li><a href="#section-speakers">Palestrantes</a></li>
+        </ul>
+    </nav>
+    <h1 class="main-header-headline">Semana do Empreendedorismo</h1>
+</header>
+
+<section class="section section-schedule">
+    <h2 id="section-schedule" class="section-heading">Programação</h2>
+    <p class="section-description">Confira a nossa programação e selecione os eventos que deseja comparecer.</p>
+    <div class="section-content">
+        <div class="schedule">
+            {% for dia in site.data.eventos %}
+                <h3 class="schedule-day">{{ dia.dia_da_semana }}</h3>
+                {% for evento in dia.eventos %}
+                    <div class="event">
+                        <p class="event-time">{{ evento.hora_de_inicio }} - {{ evento.hora_de_termino }}</p>
+                        <div class="event-text">
+                            <a href="#">
+                                <h4>{{ evento.nome }}</h4>
+                            </a>
+                            <p>Local: {{ evento.local }}</p>
+                        </div>
+                        <div class="event-speakers">
+                            {% for palestrante in site.data.palestrantes %}
+                                {% for x in evento.palestrantes %}
+                                    {% if palestrante.nome == x.nome %}
+                                        <img src="{{ palestrante.foto }}-p.jpg" alt="palestrante">
+                                    {% endif %}
+                                {% endfor %}
+                        {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endfor %}   
+        </div>
+    </div>
+</section>
+
+<section class="section section-speakers">
+    <h2 id="section-speakers" class="section-heading">Palestrantes</h2>
+    <p class="section-description">Conheça os palestrantes da Semana do Empreendedorismo 2019.</p>
+    <div class="section-content">
+        {% assign p = site.data.palestrantes | sort: 'nome' %}
+        {% for palestrante in p %}
+            <div class="speaker">
+                 <picture class="speaker-img">
+                    <source srcset="{{ palestrante.foto }}-p.jpg" media="(max-width: 720px)">
+                    <source srcset="{{ palestrante.foto }}-m.jpg" media="(max-width: 1368px)">
+                    <source srcset="{{ palestrante.foto }}-g.jpg" media="(min-width: 1368px)">
+                    <img src="/assets/img/speaker-default.png">
+                </picture>
+                <div class="speaker-text">
+                    <h3 class="speaker-title">{{ palestrante.nome }}</h3>
+                    <p class="speaker-description">{{ palestrante.titulo }}</p>
+                 </div>
+             </div>
+        {% endfor %}    
+    </div>
+</section>
